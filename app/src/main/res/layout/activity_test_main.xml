@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kiy.app.test_project.TestMainActivity">
+    <Button
+        android:id="@+id/btn_check_package"
+        android:layout_width="match_parent"
+        android:text="패키지 테스트"
+        android:layout_alignParentTop="true"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn_sub_string"
+        android:text="sub_string"
+        android:layout_below="@id/btn_check_package"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_video_test"
+        android:text="btn_video_test"
+        android:layout_below="@id/btn_sub_string"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_base64"
+        android:text="Base64 Test"
+        android:layout_below="@id/btn_video_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_reg"
+        android:text="REG Test"
+        android:layout_below="@id/btn_base64"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_captcha"
+        android:text="CAPTCHA_1"
+        android:layout_below="@id/btn_base64"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_exo_player"
+        android:text="EXO player Test"
+        android:layout_below="@id/btn_captcha"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_exo_player2"
+        android:text="EXO player Test 2"
+        android:layout_below="@id/btn_exo_player"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_service_start"
+        android:text="btn_service_start"
+        android:layout_below="@id/btn_exo_player2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_service_start_noti"
+        android:text="btn_service_start"
+        android:layout_below="@id/btn_service_start"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+</RelativeLayout>
