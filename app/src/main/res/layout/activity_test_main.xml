@@ -70,4 +70,16 @@
         android:layout_below="@id/btn_service_start"
         android:layout_width="match_parent"
         android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_cal_check"
+        android:text="날짜 체크 "
+        android:layout_below="@id/btn_service_start_noti"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_facebook_native_ad"
+        android:text="페이스북 Native Ad"
+        android:layout_below="@id/btn_service_start_noti"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
 </RelativeLayout>

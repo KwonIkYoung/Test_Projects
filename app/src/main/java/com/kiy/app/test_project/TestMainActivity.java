@@ -17,6 +17,7 @@ import android.widget.Toast;
 import java.util.List;
 import java.util.regex.Pattern;
 
+import facebook.NativeAdListActivity;
 import video.ExoPlayerActivity;
 import video.UniversalVideoViewActivity;
 import butterknife.BindView;
@@ -40,7 +41,7 @@ public class TestMainActivity extends AppCompatActivity {
 	}
 
 	@OnClick({R.id.btn_check_package, R.id.btn_sub_string, R.id.btn_video_test, R.id.btn_base64,R.id.btn_reg,R.id.btn_captcha, R.id.btn_exo_player,R.id.btn_exo_player2, R.id.btn_service_start,
-				R.id.btn_service_start_noti})
+				R.id.btn_service_start_noti , R.id.btn_cal_check,R.id.btn_facebook_native_ad})
 	public void onClick(View view) {
 		switch (view.getId()) {
 			case R.id.btn_check_package:
@@ -106,6 +107,14 @@ public class TestMainActivity extends AppCompatActivity {
 					// Alert으로 대략 내가 왜 이걸 한다라는걸 보여주면 좋음.
 					Intent serviceIntent = new Intent(Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS);
 					startActivityForResult(serviceIntent, 222);
+				break;
+			case R.id.btn_cal_check:
+				startActivity(new Intent(TestMainActivity.this, CalendarActivity.class));
+				break;
+			case R.id.btn_facebook_native_ad:
+				startActivity(new Intent(TestMainActivity.this, NativeAdListActivity.class));
+				break;
+			default:
 				break;
 		}
 	}

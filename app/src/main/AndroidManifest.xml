@@ -3,6 +3,7 @@
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -46,14 +47,19 @@
         </service>
         <service
             android:name="util.MyNotificationListener"
-            android:permission="BIND_NOTIFICATION_LISTENER_SERVICE"
             android:enabled="true"
+            android:exported="true"
             android:label="noti_check_service"
-            android:exported="true">
+            android:permission="BIND_NOTIFICATION_LISTENER_SERVICE">
             <intent-filter>
-                <action android:name="android.service.notification.NotificationListenerService" />
+                <action android:name="android.service.notification.NotificationListenerService"/>
             </intent-filter>
         </service>
+
+        <activity android:name=".CalendarActivity">
+        </activity>
+        <activity android:name="facebook.NativeAdListActivity">
+        </activity>
     </application>
 
 </manifest>

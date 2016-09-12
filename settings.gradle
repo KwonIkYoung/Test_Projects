@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':test_pubnative'
 //include ':app', ':..:ExoPlayer:library'

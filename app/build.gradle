@@ -35,4 +35,5 @@ dependencies {
     compile 'com.linsea:universalvideoview:1.1.0@aar' //- Android UniversalVideoView
     compile 'android.lib.recaptcha:reCAPTCHA:+'         //- android captcha
     compile 'com.google.android.exoplayer:exoplayer:r1.5.9'
+    compile 'com.facebook.android:audience-network-sdk:4.+'
 }
