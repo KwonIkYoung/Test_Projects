@@ -76,14 +76,14 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@id/btn_exo_player2"
-            android:text="btn_service_start"/>
+            android:text="노티 서비스 체크 확인"/>
 
         <Button
             android:id="@+id/btn_service_start_noti"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@id/btn_service_start"
-            android:text="btn_service_start"/>
+            android:text="노티 서비스 확인 "/>
 
         <Button
             android:id="@+id/btn_cal_check"
@@ -96,13 +96,25 @@
             android:id="@+id/btn_facebook_native_ad"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@id/btn_service_start_noti"
+            android:layout_below="@id/btn_cal_check"
             android:text="페이스북 Native Ad"/>
         <Button
             android:id="@+id/btn_doze_check"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@id/btn_service_start_noti"
+            android:layout_below="@id/btn_facebook_native_ad"
             android:text="Doze Mode check"/>
+        <Button
+            android:id="@+id/btn_image_matrix"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_doze_check"
+            android:text="이미지 매트릭스"/>
+        <Button
+            android:id="@+id/btn_noti_check"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_doze_check"
+            android:text="NotificationService"/>
     </RelativeLayout>
 </ScrollView>
