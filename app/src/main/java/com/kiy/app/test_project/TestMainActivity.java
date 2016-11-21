@@ -41,7 +41,7 @@ public class TestMainActivity extends AppCompatActivity {
 	}
 
 	@OnClick({R.id.btn_check_package, R.id.btn_sub_string, R.id.btn_video_test, R.id.btn_base64,R.id.btn_reg,R.id.btn_captcha, R.id.btn_exo_player,R.id.btn_exo_player2, R.id.btn_service_start,
-				R.id.btn_service_start_noti , R.id.btn_cal_check,R.id.btn_facebook_native_ad, R.id.btn_doze_check,R.id.btn_image_matrix, R.id.btn_noti_check})
+				R.id.btn_service_start_noti , R.id.btn_cal_check,R.id.btn_facebook_native_ad, R.id.btn_doze_check,R.id.btn_image_matrix, R.id.btn_noti_check,R.id.btn_change_setting})
 	public void onClick(View view) {
 		switch (view.getId()) {
 			case R.id.btn_check_package:
@@ -122,6 +122,9 @@ public class TestMainActivity extends AppCompatActivity {
 				break;
 			case R.id.btn_noti_check:
 				startActivity(new Intent(TestMainActivity.this, NotificationCheckActivity.class));
+				break;
+			case R.id.btn_change_setting:
+				startActivity(new Intent(TestMainActivity.this, SettingChangeActivity.class));
 				break;
 			default:
 				break;

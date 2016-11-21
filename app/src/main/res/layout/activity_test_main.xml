@@ -116,5 +116,11 @@
             android:layout_height="50dp"
             android:layout_below="@id/btn_doze_check"
             android:text="NotificationService"/>
+        <Button
+            android:id="@+id/btn_change_setting"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/btn_noti_check"
+            android:text="Change Setting"/>
     </RelativeLayout>
 </ScrollView>
